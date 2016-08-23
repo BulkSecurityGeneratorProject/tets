@@ -1,0 +1,62 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myVehicleLabel">Create or edit a Vehicle</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.vehicle.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.vehicle.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.vehicle.name"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_model">Model</label>
+            <input type="text" class="form-control" name="model" id="field_model"
+                    ng-model="vm.vehicle.model"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_company">Company</label>
+            <input type="text" class="form-control" name="company" id="field_company"
+                    ng-model="vm.vehicle.company"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_chasisNumber">Chasis Number</label>
+            <input type="text" class="form-control" name="chasisNumber" id="field_chasisNumber"
+                    ng-model="vm.vehicle.chasisNumber"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_make">Make</label>
+            <input type="text" class="form-control" name="make" id="field_make"
+                    ng-model="vm.vehicle.make"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_crid">Crid</label>
+            <input type="text" class="form-control" name="crid" id="field_crid"
+                    ng-model="vm.vehicle.crid"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

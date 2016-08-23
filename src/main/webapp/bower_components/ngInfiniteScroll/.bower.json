@@ -1,0 +1,21 @@
+{
+  "name": "ngInfiniteScroll",
+  "main": "build/ng-infinite-scroll.js",
+  "ignore": [
+    "**/.*",
+    "_*",
+    "node_modules",
+    "compile",
+    "test",
+    "Gruntfile.coffee",
+    ".*"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0"
+  },
+  "_source": "nexus+http://10.102.22.60:8081/repository/bower-central/ngInfiniteScroll",
+  "_target": "1.2.2",
+  "_release": "1.2.2",
+  "version": "1.2.2",
+  "_originalSource": "ngInfiniteScroll"
+}

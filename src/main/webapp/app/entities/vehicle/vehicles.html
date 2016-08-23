@@ -1,0 +1,66 @@
+<div>
+    <h2>Vehicles</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="vehicle.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Vehicle
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Name</span></th>
+                    <th><span>Model</span></th>
+                    <th><span>Company</span></th>
+                    <th><span>Chasis Number</span></th>
+                    <th><span>Make</span></th>
+                    <th><span>Crid</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="vehicle in vm.vehicles track by vehicle.id">
+                    <td><a ui-sref="vehicle-detail({id:vehicle.id})">{{vehicle.id}}</a></td>
+                    <td>{{vehicle.name}}</td>
+                    <td>{{vehicle.model}}</td>
+                    <td>{{vehicle.company}}</td>
+                    <td>{{vehicle.chasisNumber}}</td>
+                    <td>{{vehicle.make}}</td>
+                    <td>{{vehicle.crid}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="vehicle-detail({id:vehicle.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="vehicle.edit({id:vehicle.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="vehicle.delete({id:vehicle.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

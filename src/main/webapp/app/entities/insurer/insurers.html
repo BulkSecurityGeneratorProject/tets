@@ -1,0 +1,68 @@
+<div>
+    <h2>Insurers</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="insurer.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Insurer
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Title</span></th>
+                    <th><span>First Name</span></th>
+                    <th><span>Last Name</span></th>
+                    <th><span>Dob</span></th>
+                    <th><span>Marital Status</span></th>
+                    <th><span>Post Code</span></th>
+                    <th><span>Email Id</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="insurer in vm.insurers track by insurer.id">
+                    <td><a ui-sref="insurer-detail({id:insurer.id})">{{insurer.id}}</a></td>
+                    <td>{{insurer.title}}</td>
+                    <td>{{insurer.firstName}}</td>
+                    <td>{{insurer.lastName}}</td>
+                        <td>{{insurer.dob | date:'mediumDate'}}</td>
+                    <td>{{insurer.maritalStatus}}</td>
+                    <td>{{insurer.postCode}}</td>
+                    <td>{{insurer.emailId}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="insurer-detail({id:insurer.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="insurer.edit({id:insurer.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="insurer.delete({id:insurer.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

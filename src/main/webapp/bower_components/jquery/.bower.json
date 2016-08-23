@@ -1,0 +1,19 @@
+{
+  "name": "jquery",
+  "main": "dist/jquery.js",
+  "license": "MIT",
+  "ignore": [
+    "package.json"
+  ],
+  "keywords": [
+    "jquery",
+    "javascript",
+    "browser",
+    "library"
+  ],
+  "_source": "nexus+http://10.102.22.60:8081/repository/bower-central/jquery",
+  "_target": "2.2.4",
+  "_release": "2.2.4",
+  "version": "2.2.4",
+  "_originalSource": "jquery"
+}

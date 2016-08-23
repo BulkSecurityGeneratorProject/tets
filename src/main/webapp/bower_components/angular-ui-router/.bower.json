@@ -1,0 +1,28 @@
+{
+  "name": "angular-ui-router",
+  "version": "0.3.0",
+  "license": "MIT",
+  "main": "./release/angular-ui-router.js",
+  "dependencies": {
+    "angular": "^1.0.8"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "component.json",
+    "package.json",
+    "lib",
+    "config",
+    "sample",
+    "test",
+    "tests",
+    "ngdoc_assets",
+    "Gruntfile.js",
+    "files.js"
+  ],
+  "_source": "nexus+http://10.102.22.60:8081/repository/bower-central/angular-ui-router",
+  "_target": "0.3.0",
+  "_release": "0.3.0",
+  "_originalSource": "angular-ui-router"
+}

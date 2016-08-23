@@ -1,0 +1,14 @@
+{
+  "name": "angular-aria",
+  "version": "v1.5.5",
+  "license": "MIT",
+  "main": "./angular-aria.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.5.5"
+  },
+  "_source": "nexus+http://10.102.22.60:8081/repository/bower-central/angular-aria",
+  "_target": "1.5.5",
+  "_release": "v1.5.5",
+  "_originalSource": "angular-aria"
+}

@@ -1,0 +1,38 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "model",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "company",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "chasisNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "make",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "crid",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "1471933100206",
+  "dto": "no",
+  "pagination": "no"
+}

@@ -1,0 +1,43 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "dob",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "maritalStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "postCode",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "emailId",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "1471932951068",
+  "dto": "no",
+  "pagination": "no"
+}

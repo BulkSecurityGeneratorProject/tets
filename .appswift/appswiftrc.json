@@ -1,0 +1,10 @@
+{
+    "appswift": {
+        "continueTheming": true,
+        "shouldCommitCode": true,
+        "scmType": "git",
+        "scmUserName": "kkorada",
+        "scmPwd": "India@123",
+        "scmUrl": "https://github.com/kkorada/tets.git"
+    }
+}
